@@ -1,4 +1,13 @@
-ion-title.title-large {
-    font-size: 24px;
-    color: red;
+ion-content {
+    text-align: justify;
 }
+
+.subtitle {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.img-fluid {
+    max-width: 60%; 
+    height: auto; /* Zachowaj proporcje */
+  }

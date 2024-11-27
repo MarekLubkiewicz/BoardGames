@@ -1,9 +1,31 @@
-
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" class="ion-padding">
+ 
     <ion-toolbar>
-      <ion-title size="large">Tajniacy</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="game-compedium"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="gameTitle">Tajniacy</ion-title>     
     </ion-toolbar>
-  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="6" class="ion-text-center">
+        <img src="assets/images/tajniacy.png" alt="Talisman. Magia i Miecz" class="img-fluid">
+      </ion-col>
+      <ion-col size="12" size-sm="6">
+        <p>
+          Dwie drużyny, którym przewodzi dwóch Szefów Wywiadu, próbują jak najszybciej nawiązać kontakt ze wszystkimi swoimi agentami
+        </p>
+      </ion-col>
+      <ion-col size="12" size-sm="6">
+        <p>
+          Parametry gry, ilość uczestników itp
+        </p>
+      </ion-col>
+      <ion-col size="12" size-sm="6">
+        dodatkowe infromacje np zawartość pudełka
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -30,7 +30,7 @@ export class GameCompediumPage implements OnInit {
       title: 'Talisman: Magia i miecz',
       routing:'/talisman',
       image: 'assets/images/talizmanSmall.png',
-      shortInfo: 'W grze wyruszysz na epicką przygodę, ścigając się, aby jako pierwszy zdobyć Talizman, dotrzeć do Korony Władzy w centrum planszy i pokonać starszego smoka, aby wygrać.',
+      shortInfo: 'W grze wyruszysz na epicką przygodę, ścigając się, aby jako pierwszy zdobyć Talizman, dotrzeć do Korony Władzy w centrum planszy i pokonać strasznego smoka, aby wygrać.',
     },
     {
       id: 2,

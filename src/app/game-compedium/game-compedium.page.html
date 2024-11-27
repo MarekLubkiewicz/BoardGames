@@ -10,7 +10,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let game of games" [routerLink]="[game.routing]">
+    <ion-item *ngFor="let game of games" [routerLink]="[game.routing ]">
       <ion-thumbnail slot="start">
         <img [src]="game.image" alt="{{ game.title }}">
       </ion-thumbnail>

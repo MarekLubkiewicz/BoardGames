@@ -1,37 +1,48 @@
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" class="ion-padding">
+ 
     <ion-toolbar>
-      <ion-title size="large">Talisman: Magia i Miecz</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="game-compedium"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="gameTitle">Talisman: <span class="subtitle">Magia i Miecz</span></ion-title>     
     </ion-toolbar>
-  </ion-header>
   
-  <br>
-  <h2></h2>
-  <p>Każdy z graczy wciela się w jednego z poszukiwaczy przygód i wędrując po pełnej niebezpieczeństw krainie, zdobywa doświadczenie, 
-    rozwija umiejętności swojej postaci, odnajduje albo kupuje przedmioty i przeżywa niezwykłe przygody.</p> 
-  <p>Celem każdego gracza jest zdobyć, jako pierwszy, starożytny artefakt - Koronę Władzy, która uczyni go niemal równego bogom.</p>
-<br>
-  <p>Liczba graczy: 2-6</p>
-  <p>Zalecany wiek: od 12 lat</p>
-  <p>Czas zabawy: ok. 120-180 min</p>
-  <br>
-  <h4>Zawartość pudełka</h4>
-  <ul>
-    <li>plansza</li>
-    <li>12 figurek poszukiwaczy</li>
-    <li>12 kart poszukiwaczy</li>
-    <li>100 kart przygód</li>
-    <li>24 karty zaklęć</li>
-    <li>18 kart ekwipunku</li>
-    <li>4 karty talizmanów</li>
-    <li>1 karta ropuchy</li>
-    <li>6 żetonów ropuch</li>
-    <li>38 czerwonych siły (6 dużych, 32 małych)</li>
-    <li>38 niebieskich mocy (6 dużych, 32 małych)</li>
-    <li>38 zielonych życia (6 dużych, 32 małych)</li>
-    <li>38 żetonów losu</li>
-    <li>12 żetonów charakterów</li>
-    <li>30 sztuk złota</li>
-    <li>3 sześciościenne kości</li>
-  </ul>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="6" class="ion-text-center">
+       <img src="assets/images/talizman.png" alt="Talisman. Magia i Miecz" class="img-fluid">
+      </ion-col>
+      <ion-col size="12" size-sm="6">
+        <p>Każdy z graczy wciela się w jednego z poszukiwaczy przygód i wędrując po pełnej niebezpieczeństw krainie, zdobywa doświadczenie, 
+          rozwija umiejętności swojej postaci, odnajduje albo kupuje przedmioty i przeżywa niezwykłe przygody.</p> 
+        <p>Celem każdego gracza jest zdobyć, jako pierwszy, starożytny artefakt - Koronę Władzy, która uczyni go niemal równego bogom.</p>
+      </ion-col>
+      <ion-col size="12" size-sm="6">
+        <p>Liczba graczy: 2-6</p>
+        <p>Zalecany wiek: od 12 lat</p>
+        <p>Czas zabawy: ok. 120-180 min.</p>
+      </ion-col>
+      <ion-col size="12" size-sm="6">
+        <h4>Zawartość pudełka</h4>
+        <ul>
+          <li>plansza</li>
+          <li>12 figurek poszukiwaczy</li>
+          <li>12 kart poszukiwaczy</li>
+          <li>100 kart przygód</li>
+          <li>24 karty zaklęć</li>
+          <li>18 kart ekwipunku</li>
+          <li>4 karty talizmanów</li>
+          <li>1 karta ropuchy</li>
+          <li>6 żetonów ropuch</li>
+          <li>38 czerwonych siły (6 dużych, 32 małych)</li>
+          <li>38 niebieskich mocy (6 dużych, 32 małych)</li>
+          <li>38 zielonych życia (6 dużych, 32 małych)</li>
+          <li>38 żetonów losu</li>
+          <li>12 żetonów charakterów</li>
+          <li>30 sztuk złota</li>
+          <li>3 sześciościenne kości</li>
+        </ul>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
