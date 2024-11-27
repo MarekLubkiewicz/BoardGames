@@ -8,11 +8,16 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="true">
-  
-    <div class="image-container">
-      <img src="assets/images/house.png" alt="Talisman" (click)="onImageClick('talisman')" />
-    </div>
-
-
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let game of games" [routerLink]="[game.routing]">
+      <ion-thumbnail slot="start">
+        <img [src]="game.image" alt="{{ game.title }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ game.title }}</h2>
+        <p>{{ game.shortInfo }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
