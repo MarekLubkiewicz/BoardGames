@@ -1,0 +1,10 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    max-width: 200px; /* Maksymalna szerokość */
+    cursor: pointer; /* Wskaźnik na klikalność */
+  }
