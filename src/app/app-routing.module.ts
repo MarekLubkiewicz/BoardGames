@@ -4,8 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'start-page',
-    pathMatch: 'full'
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
   {
     path: 'your-events',
@@ -34,10 +33,6 @@ const routes: Routes = [
   {
     path: 'events',
     loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
-  },
-  {
-    path: 'start-page',
-    loadChildren: () => import('./start-page/start-page.module').then( m => m.StartPagePageModule)
   },
   {
     path: 'settings',

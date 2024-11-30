@@ -2,13 +2,11 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
-        <h1>Board Games</h1>
+        <h3>Board Games</h3>
         
         <!-- Sekcja SCHEDULER -->
         <ion-list id="scheduler-list">
           <ion-list-header>Scheduler</ion-list-header>
-          <!-- <ion-note>Planowanie rozgrywki</ion-note> -->
-
           <ion-menu-toggle auto-hide="false" *ngFor="let page of schedulerPages">
             <ion-item routerDirection="root" [routerLink]="[page.url]" [queryParams]="{ title: page.title }"  lines="none" detail="false" routerLinkActive="selected">
               <ion-icon aria-hidden="true" slot="start" [ios]="page.icon + '-outline'" [md]="page.icon + '-sharp'"></ion-icon>
@@ -39,7 +37,7 @@
           </ion-menu-toggle>
         </ion-list> 
 
-        <ion-list id="about">
+        <ion-list id="info-pages">
           <ion-menu-toggle auto-hide="false" *ngFor="let page of infoPages">
             <ion-item routerDirection="root" [routerLink]="[page.url]" [queryParams]="{ title: page.title }" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon aria-hidden="true" slot="start" [ios]="page.icon + '-outline'" [md]="page.icon + '-sharp'"></ion-icon>

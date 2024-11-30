@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public schedulerPages = [
     { title: 'Rozgrywki', url: '/events', icon: 'calendar' },
-    { title: 'Planowanie rozgrywki', url: '/your-events', icon: 'push' },
+    { title: 'Planowanie', url: '/your-events', icon: 'push' },
     { title: 'Twoje zapisy', url: '/your-entries', icon: 'list' },
   ];  
   public logPages = [

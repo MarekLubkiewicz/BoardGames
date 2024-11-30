@@ -1,3 +1,4 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -5,15 +6,26 @@
     </ion-buttons>
     <ion-title>{{ title }}</ion-title>
   </ion-toolbar>
-
 </ion-header>
 
-<ion-content [fullscreen]="true">
- <div id="container">
-  <h2>Tu będą umieszczone elementy strony z zaplanowanymi rozgrywkami</h2>
-  <p>Lorem ipsum dolor sit amet. <strong>tekst wyróżniony</strong> tenetur facere ut accusamus perferendis non voluptatum beatae hic provident perspiciatis in quia neque quo mollitia quis. 
-    Et Quis quasi aut odit animi cum esse mollitia aut sequi blanditiis. </p>
-</div>
 
+<ion-content [fullscreen]="true">
+  <ion-list *ngIf="events">
+    <ion-item *ngFor="let event of events | keyvalue">
+      <ion-label>
+        <h2>{{ event.key }}</h2>
+        <p><ion-icon slot="start" name="location-outline"></ion-icon><span class="data">{{ event.value.place }}</span></p>
+        <p><ion-icon slot="start" name="calendar-number-outline"></ion-icon><span class="data">{{ event.value.date }}</span><span class="divider"> </span>
+          <ion-icon slot="start" name="time-outline"></ion-icon><span class="data">{{ event.value.time }}</span></p>
+        <p><ion-icon slot="start" name="dice-outline"></ion-icon>Gry:</p>
+        <p class="listgames"><span class="data">{{ event.value.games.game1 }}</span></p> 
+        <p class="listgames"><span class="data">{{ event.value.games.game2 }}</span></p>
+        <p class="listgames"><span class="data">{{ event.value.games.game3 }}</span></p>
+        <p>Wolne miejsca: <span class="data">{{ event.value.free_slots }}</span></p>
+        <p>Organizator: <span class="data">{{ event.value.owner }}</span></p>
+        <p>Szczegóły: <span class="data">{{ event.value.details }}</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
